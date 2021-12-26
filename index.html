@@ -58,124 +58,74 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Login Modal -->
-    <div
-      class="modal fade"
-      id="loginModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">LOGIN FORM</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="login.php" method="POST">
-              <div class="mb-3">
-                <label for="loginEmail" class="form-label">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="loginEmail"
-                  aria-describedby="emailHelp"
-                  name="email"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
+    </div>
+  </section>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">LOGIN FORM</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="login.php" method="POST">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" name="email" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
               </div>
-              <div class="mb-3">
-                <label for="loginPwd" class="form-label">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="loginPwd"
-                  name="pwd"
-                />
-              </div>
-              <button type="submit" class="btn btn-mainColor">Login</button>
-            </form>
-          </div>
+            </div>
+            <div class="mb-3">
+              <label for="loginPwd" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPwd" name="pwd" />
+            </div>
+            <button type="submit" class="btn btn-mainColor">Login</button>
+          </form>
         </div>
       </div>
     </div>
-    <!-- End Login Modal -->
-    <!-- Register Modal -->
-    <div
-      class="modal fade"
-      id="registerModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">REGISTER FORM</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="register.php" method="POST">
-              <div class="mb-3">
-                <label for="regisUsername" class="form-label">Username</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="regisUsername"
-                  aria-describedby="emailHelp"
-                  name="name"
-                />
+  </div>
+  <!-- End Login Modal -->
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">REGISTER FORM</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="register.php" method="POST">
+            <div class="mb-3">
+              <label for="regisUsername" class="form-label">Username</label>
+              <input type="text" class="form-control" id="regisUsername" aria-describedby="emailHelp" name="name" />
+            </div>
+            <div class="mb-3">
+              <label for="regisEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="regisEmail" aria-describedby="emailHelp" name="email" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
               </div>
-              <div class="mb-3">
-                <label for="regisEmail" class="form-label">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="regisEmail"
-                  aria-describedby="emailHelp"
-                  name="email"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="regisPwd" class="form-label">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="regisPwd"
-                  name="pwd"
-                />
-              </div>
-              <button type="submit" class="btn btn-mainColor">Register</button>
-            </form>
-          </div>
+            </div>
+            <div class="mb-3">
+              <label for="regisPwd" class="form-label">Password</label>
+              <input type="password" class="form-control" id="regisPwd" name="pwd" />
+            </div>
+            <button type="submit" class="btn btn-mainColor">Register</button>
+          </form>
         </div>
       </div>
     </div>
-    <!-- End Register Modal -->
-    <footer>
-           <p>Created with love by Shaddam, Zulham, Soffan</p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <!-- End Register Modal -->
+  <footer>
+    <p>Created with love by Shaddam, Zulham, Soffan, nanda nyobaa</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
